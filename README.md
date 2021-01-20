@@ -1,2 +1,47 @@
-# parallel-two-way-counter
-Reading lines as an input from a text file (thread 1), adding each line alternatively to two queues (thread 1), getting count of vowel-consonant from each line in two queues (thread 2, thread 3), storing results of count from two queues in the output queue (thread 2, thread 3), and adding results of vowel-consonant count from the output queue (thread 4).
+# Multi Threading Tutorial in C++
+
+> Quick demonstration of multi threading in modern C++
+
+Features:
+
+- [x] Creating task and threads
+- [x] Using function pointers, functors, and lambda functions
+- [x] Futures, promises, and async tasks
+- [x] Supports Google [Bazel](https://bazel.build/)
+
+
+
+Here is the video explaining how to use multi-threading in C++:
+
+<table><tr><td>
+
+<a href="https://youtu.be/3aqxaZsvn80">
+<img border="5" alt="Debugging C++ in Visual Studio Code using gcc/gdb and Bazel" src="https://github.com/ourarash/multithreading_cpp/blob/master/youtube.png?raw=true" width="400">
+</a>
+</td></tr></table>
+
+## Installation
+
+```bash
+git clone https://github.com/ourarash/multithreading_cpp.git
+```
+
+## Running examples:
+
+You can run this either using `bazel` OR just plain `g++`.
+
+
+For `bazel`:
+
+```bash
+bazel run src/main:main
+```
+
+For `g++`:
+```bash
+g++ -std=c++17 -lpthread src/main/main.cc  -I ./
+./a.out
+```
+
+## Bazel Installation and Visual Studio Setup
+For instructions on installing Bazel and setting it up in Visual Studio Code see [here](https://github.com/ourarash/cpp-template)
