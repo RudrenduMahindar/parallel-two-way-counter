@@ -92,7 +92,7 @@ int main()
 	void *addThreadResult = NULL;
 	void *serveThreadResult = NULL;
 
-	//pthread_join(addThread,(void **)&addThreadResult);
+	pthread_join(addThread,(void **)&addThreadResult);
 	pthread_join(serveThread,(void **)&serveThreadResult);
 
 	return 0;
